@@ -7,9 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class HealthController {
 
+    private static final String HEALTH_OK="Customer Support App is UP !";
+
     @RequestMapping("/health")
     public String status(){
-        return "OK";
+        return HEALTH_OK;
     }
 
 }
